@@ -1,2 +1,2 @@
 # RAD
-C/C++ beginner 
+learning C/C++  
