@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, t;
+    int max(int x, int y, int z);
+    scanf("%d, %d, %d", &a, &b, &c);
+    t = max(a, b, c);
+    printf("the max number is %d", t);
+    getchar();
+    return 0;
+}
+
+int max(int x, int y, int z)
+{
+
+    int m;
+    m = x;
+    if (m < y)
+        m = y;
+    if (m < z)
+        m = z;
+
+    return (m);
+}
