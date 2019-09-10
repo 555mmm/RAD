@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float f1, x = 2.5, y = 4.7;
+    int a = 7;
+
+
+   f1 = x+a%3*(int)(x+y)%2/4;//1/4=0整数与整数除法只保留整数商
+
+
+
+    printf("%f", f1);//f1 = 2.5;
+    return 0;
+}
