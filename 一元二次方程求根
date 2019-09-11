@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+/* 顺序结构程序设计*/
+int main()
+{
+    float a, b, c, disc, x1, x2, p , q;
+    scanf("%f %f %f", &a, &b, &c);//scanf输入数据时不能规定精度并且无逗号
+    disc = b*b - 4*a*c;//设b平方-4ac>0
+    p = -b/(2*a);
+    q = sqrt(disc)/(2*a);
+    x1 = p + q;
+    x2 = p - q;
+    printf("x1 = %5.2f\nx2=%5.2f\n", x1 ,x2);
+    return 0;
+
+}
