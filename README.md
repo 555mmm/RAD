@@ -1,2 +1,2 @@
-# RAD
+# C 
 learning C/C++  
