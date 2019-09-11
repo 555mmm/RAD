@@ -1,0 +1,18 @@
+int main()
+{
+
+
+    int grade;
+
+    scanf("%d", &grade);
+    switch(grade/10)
+    {
+    case 10:
+    case 9:printf("grade A");break;//共用一组语句
+    case 8:printf("grade B");break;
+    case 7:printf("grade C");break;
+    case 6:printf("grade D");break;
+    default: printf("grade E");break;
+    }
+
+}
