@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+int main()
+{
+    char A, a;
+    A = getchar();
+    a = A + 32; //通过ASCⅡ码进行转换
+    printf("%c", a);
+    return 0;
+
+}
