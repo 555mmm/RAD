@@ -5,7 +5,7 @@ int main()
 {
     int a, b, c, t;
     int max(int x, int y, int z);
-    scanf("%d, %d, %d", &a, &b, &c);
+    scanf("%d, %d, %d", &a, &b, &c);//输入数据中间用逗号分开
     t = max(a, b, c);
     printf("the max number is %d", t);
     getchar();
