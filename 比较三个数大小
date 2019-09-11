@@ -17,3 +17,17 @@ int main()
     return 0;
 
 }
+
+
+/* 比较abc大小 条件运算符*/
+int main()
+{
+
+
+    int a, b, c, t, t2;
+
+    scanf("%d %d %d", &a, &b, &c);
+    t = (a > b)?a:b;//将ab中大者存放到t里
+    t2 = (t>c)?t:c;
+    printf("%d",t2);
+}
