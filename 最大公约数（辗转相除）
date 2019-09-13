@@ -5,22 +5,25 @@
 int main()
 {
     //辗转相除法求最大公约数
-    int m, n, t, p, q;//设p为最大公约数，q为最小公倍数
-    scanf("%d, %d", &m, &n);
-    if(m>n)//将两个数从小到大排序
+    int m, n, t, num1, num2, p;
+    scanf("%d, %d", &num1, &num2);
+    if(num1>num2)//将两个数从小到大排序
     {
-        t=m;
-        m=n;
-        n=t;
+        t=num1;
+        num1=num2;
+        num2=t;
 
     }
+    m=num1;n=num2;
     while(m!=0)//余数不为0时，循环一直执行
     {
         t = n%m;
         n = m;
-        m = t;//余数为0时较小数为最大公约数
+        m = t;
     }
+    printf("%d",num1*num2);
      printf("最大公约数为%d",n);
+     printf("最小公倍数为%d",p);//最小公倍数等于两数相乘再除以最大公约数
 
     return 0;
 }
