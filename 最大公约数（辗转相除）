@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    //辗转相除法求最大公约数
+    int m, n, t, p, q;//设p为最大公约数，q为最小公倍数
+    scanf("%d, %d", &m, &n);
+    if(m>n)//将两个数从小到大排序
+    {
+        t=m;
+        m=n;
+        n=t;
+
+    }
+    while(m!=0)//余数不为0时，循环一直执行
+    {
+        t = n%m;
+        n = m;
+        m = t;
+    }
+     printf("最大公约数为%d",n);
+
+    return 0;
+}
