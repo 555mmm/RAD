@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char c;
+    int e=0, k=0, s=0, q=0;
+    while((c = getchar()) != '\n')//回车键结束字符串输入
+    {
+        if(c == 32) k++;//32代表空格
+        else if((c >= 97 && c <= 122) || (c >= 65 && c <= 90)) e++;//全用ASC码表示
+        else if (c >= 48 && c <= 57) s++;//全用ASC码表示
+        else q++;
+
+
+    }
+    printf("%d%d%d%d", e, k, s, q);
+    return 0;
+}
