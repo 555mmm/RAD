@@ -6,7 +6,7 @@ int main()
 {
     //辗转相除法求最大公约数
     int m, n, t, num1, num2, p;
-    scanf("%d, %d", &num1, &num2);
+    scanf("%d %d", &num1, &num2);//中间有逗号容易错误
     if(num1>num2)//将两个数从小到大排序
     {
         t=num1;
@@ -21,7 +21,7 @@ int main()
         n = m;
         m = t;
     }
-    printf("%d",num1*num2);
+     p = num1*num2/n;
      printf("最大公约数为%d",n);
      printf("最小公倍数为%d",p);//最小公倍数等于两数相乘再除以最大公约数
 
