@@ -1,0 +1,25 @@
+//检验参数计算顺序从左往右或从右往左
+#include <stdio.h>
+#include <stdlib.h>
+#include "math.h"
+
+int main()
+{
+
+    int i=1,p;
+    int f(int x ,int y);
+
+    p = f(i, ++i);
+    printf("%d", p);
+
+
+    return 0;
+}
+
+int f(int x, int y)
+{   int z;
+    if(x>y) z=1;
+    else if (x==y) z=0;
+    else z=-1;
+    return z;
+}
