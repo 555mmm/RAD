@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "math.h"
+
+int main()
+{
+    //求1000以内完数,先定义出
+    int sum=0;
+
+    for(int n=1; n<=1000; n++)
+        {
+        if(n=1) printf("1为完数因子为1\n");
+        for(int i=1; i<n; i++)
+        {
+            if(n%i==0)
+                sum=sum+i;
+        }
+        if(sum==n)
+            printf("d%为完数因子为", n);
+
+        }
+        getchar();
+
+
+    return 0;
+}
